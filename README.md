@@ -7,13 +7,13 @@
   - Register using email/password
   - Register using Google/Facebook
   - Verify email address
+  - User clicks the "Sign Up" button.
   - Create initial profile
+  - System redirects the user to the Dashboard / Profile.
 - **As a registered user:**
   - Log in using email/password
-  - Log in using Google/Facebook
+  - Log in using Google/Facebook (optinal)
   - Reset forgotten password
-  - Manage authentication settings
-
 ### 2. Profile Management
 - **As a pet owner:**
   - Create pet profile(s)
