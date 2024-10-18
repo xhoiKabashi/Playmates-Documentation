@@ -9,14 +9,23 @@
   - Verify email address
   - User clicks the "Sign Up" button.
   - Create initial profile
-  - System redirects the user to the Dashboard / Profile.
+  - System redirects the user to the Dashboard .
 - **As a registered user:**
   - Log in using email/password
   - Log in using Google/Facebook (optional)
   - Reset forgotten password
   - User clicks the "Login" button.
   - System verifies the credentials.
-  - System redirects the user to the Dashboard / Profile.
+  - System redirects the user to the Dashboard .
+### 2. Dashboard 
+- **As a user  alraedy logged
+  - User can acess Pet Profile Management Page
+  - Use can access Matchmaking Page
+  - User can acces Messages
+  - User can acess Blog/Community Page
+  - User can Acess Marketplace Page
+  - User can acces Adoption Center Pafe
+  - 
 ### 2. Profile Management
 - **As a pet owner:**
   - Create pet profile(s)
