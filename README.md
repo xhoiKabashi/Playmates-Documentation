@@ -85,6 +85,7 @@ graph TD
     B -->|Existing User| D[Login]
     
     C --> E[Profile Creation]
+    E --> F[Dashboard]
     D --> F[Dashboard]
     
     F --> G[Pet Profile Management]
