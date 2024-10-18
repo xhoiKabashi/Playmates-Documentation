@@ -5,15 +5,18 @@
 ### 1. User accessing the website / User Authentication
 - **As a new user:**
   - Register using email/password
-  - Register using Google/Facebook
+  - Register using Google/Facebook (optional)
   - Verify email address
   - User clicks the "Sign Up" button.
   - Create initial profile
   - System redirects the user to the Dashboard / Profile.
 - **As a registered user:**
   - Log in using email/password
-  - Log in using Google/Facebook (optinal)
+  - Log in using Google/Facebook (optional)
   - Reset forgotten password
+  - User clicks the "Login" button.
+  - System verifies the credentials.
+  - System redirects the user to the Dashboard / Profile.
 ### 2. Profile Management
 - **As a pet owner:**
   - Create pet profile(s)
