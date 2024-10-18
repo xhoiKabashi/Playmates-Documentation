@@ -24,8 +24,8 @@
   - User can acces Messages
   - User can acess Blog/Community Page
   - User can Acess Marketplace Page
-  - User can acces Adoption Center Pafe
-  - 
+  - User can acces Adoption Center Page
+  
 ### 2. Profile Management
 - **As a pet owner:**
   - Create pet profile(s)
@@ -35,7 +35,6 @@
   - Manage profile visibility
   - Set location preferences
   - Update personal information
-
 ### 3. Pet Matchmaking
 - **As a pet owner seeking playmates:**
   - Set search criteria
