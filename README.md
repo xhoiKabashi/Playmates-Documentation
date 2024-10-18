@@ -80,7 +80,7 @@
 
 ```mermaid
 graph TD
-    A[Login / Register page] --> B{User Status}
+    A[Landing Page] --> B{User Status}
     B -->|New User| C[Registration]
     B -->|Existing User| D[Login]
     
