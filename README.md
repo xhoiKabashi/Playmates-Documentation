@@ -18,7 +18,7 @@
   - System verifies the credentials.
   - System redirects the user to the Dashboard .
 ### 2. Dashboard 
-- **As a user  alraedy logged
+- **As a user  alraedy logged:**
   - User can acess Pet Profile Management Page
   - Use can access Matchmaking Page
   - User can acces Messages
