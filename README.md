@@ -105,7 +105,8 @@ graph TD
     F --> J[Blog/Community]
     F --> K[Marketplace]
     F --> L[Adoption Center]
-    F --> M[Settings]
+    F --> S[Settings]
+
 
     
     H --> M{Match Found?}
