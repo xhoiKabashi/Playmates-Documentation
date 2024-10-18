@@ -87,7 +87,7 @@
   - Leave reviews
   - Track order status
 
-## Application Flow
+## General Application Flow
 
 ```mermaid
 graph TD
