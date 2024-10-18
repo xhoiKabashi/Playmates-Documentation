@@ -26,16 +26,16 @@
   - User can Acess Marketplace Page
   - User can acces Adoption Center Page
   
-### 2. Profile Management
+### 3. Profile Management
 - **As a pet owner:**
-  - Create pet profile(s)
+  - Create pet profile
   - Upload pet photos
   - Edit pet information
   - Update availability status
   - Manage profile visibility
   - Set location preferences
   - Update personal information
-### 3. Pet Matchmaking
+### 4. Pet Matchmaking
 - **As a pet owner seeking playmates:**
   - Set search criteria
   - View potential matches
@@ -45,7 +45,7 @@
   - Schedule playdates
   - Rate past interactions
 
-### 4. Communication
+### 5. Communication
 - **As a matched user:**
   - Send direct messages
   - Share photos in chat
@@ -54,7 +54,7 @@
   - Schedule meetups
   - Share location for meetups
 
-### 5. Content Management
+### 6. Content Management
 - **As a community member:**
   - Create blog posts
   - Comment on posts
@@ -63,7 +63,7 @@
   - Rate and review services
   - Report inappropriate content
 
-### 6. Adoption Platform
+### 7. Adoption Platform
 - **As a shelter/individual:**
   - List pets for adoption
   - Upload pet documentation
@@ -75,7 +75,7 @@
   - Contact pet owners/shelters
   - Save favorite listings
 
-### 7. Marketplace Interaction
+### 8. Marketplace Interaction
 - **As a seller:**
   - List products/services
   - Manage inventory
@@ -105,6 +105,8 @@ graph TD
     F --> J[Blog/Community]
     F --> K[Marketplace]
     F --> L[Adoption Center]
+    F --> M[Settings]
+
     
     H --> M{Match Found?}
     M -->|Yes| N[Chat Interface]
