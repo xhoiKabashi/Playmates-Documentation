@@ -2,7 +2,7 @@
 
 ## Use Cases
 
-### 1. User Authentication
+### 1. User accessing the website / User Authentication
 - **As a new user:**
   - Register using email/password
   - Register using Google/Facebook
