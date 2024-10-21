@@ -206,3 +206,111 @@ DELETE /api/posts/:postId
 - Pagination
 - Database indexing
 - Asset minification
+erDiagram
+    USERS {
+        int UserID PK
+        string Email
+        string PasswordHash
+        boolean IsEmailVerified
+        string ResetPasswordToken
+        datetime ResetPasswordExpires
+        datetime CreatedAt
+        datetime UpdatedAt
+    }
+    OAUTHPROVIDERS {
+        int OAuthID PK
+        int UserID FK
+        string ProviderName
+    }
+    USERPROFILES {
+        int ProfileID PK
+        int UserID FK
+        string FirstName
+        string LastName
+        string Location
+        string ProfilePicture
+    }
+    PETPROFILES {
+        int PetID PK
+        int UserID FK
+        string PetName
+        string Species
+        int Age
+        string Photo
+        string Status
+    }
+    MATCHES {
+        int MatchID PK
+        int PetID FK
+        int MatchedPetID FK
+        string MatchStatus
+    }
+    PLAYDATES {
+        int PlaydateID PK
+        int MatchID FK
+        datetime ScheduledAt
+        string Location
+    }
+    MESSAGES {
+        int MessageID PK
+        int SenderUserID FK
+        int ReceiverUserID FK
+        string Content
+        datetime SentAt
+    }
+    POSTS {
+        int PostID PK
+        int UserID FK
+        string Title
+        string Content
+        datetime CreatedAt
+    }
+    COMMENTS {
+        int CommentID PK
+        int PostID FK
+        int UserID FK
+        string Content
+        datetime CommentedAt
+    }
+    ADOPTIONLISTINGS {
+        int ListingID PK
+        int PetID FK
+        string AdoptionStatus
+        datetime ListedAt
+    }
+    ADOPTIONREQUESTS {
+        int RequestID PK
+        int UserID FK
+        int ListingID FK
+        string RequestStatus
+        datetime RequestedAt
+    }
+    PRODUCTLISTINGS {
+        int ProductID PK
+        int UserID FK
+        string ProductTitle
+        float Price
+        int Stock
+    }
+    ORDERS {
+        int OrderID PK
+        int ProductID FK
+        int UserID FK
+        int Quantity
+        float TotalPrice
+        datetime OrderedAt
+    }
+
+    USERS ||--o{ OAUTHPROVIDERS : "has"
+    USERS ||--o{ USERPROFILES : "has"
+    USERS ||--o{ MESSAGES : "sends"
+    USERS ||--o{ ADOPTIONREQUESTS : "makes"
+    USERPROFILES ||--o{ PETPROFILES : "owns"
+    PETPROFILES ||--o{ MATCHES : "participates in"
+    MATCHES ||--o{ PLAYDATES : "schedules"
+    POSTS ||--o{ COMMENTS : "has"
+    PETPROFILES ||--o{ ADOPTIONLISTINGS : "listed in"
+    ADOPTIONLISTINGS ||--o{ ADOPTIONREQUESTS : "receives"
+    PRODUCTLISTINGS ||--o{ ORDERS : "sold in"
+    USERS ||--o{ ORDERS : "makes"
+
